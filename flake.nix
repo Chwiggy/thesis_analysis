@@ -21,7 +21,7 @@
         default = pkgs.mkShell {
           packages = with pkgs;
             [ python311 jupyter virtualenv ]
-            ++ (with pkgs.python311Packages; [ pip jupyter pandas geopandas numpy matplotlib umap rasterio]);
+            ++ (with pkgs.python311Packages; [ pip jupyter pandas geopandas numpy matplotlib umap-learn rasterio]);
         };
       });
     };
