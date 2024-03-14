@@ -24,5 +24,5 @@
             ++ (with pkgs.python311Packages; [ pip jupyter pandas geopandas numpy matplotlib umap rasterio]);
         };
       });
-    }
+    };
 } 
