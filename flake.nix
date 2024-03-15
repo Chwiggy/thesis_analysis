@@ -35,7 +35,7 @@
               umap-learn
               rasterio
               branca
-              callPackage ./pkgs/mapclassify/default.nix
+              (callPackage ./pkgs/mapclassify/default.nix {})
             ]);
         };
       });
