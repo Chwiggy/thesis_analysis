@@ -19,7 +19,7 @@
 }:
 
 buildPythonPackage rec {
-  pname = mapclassify;
+  pname = "mapclassify";
   version = "2.6.1";
   pyproject = true;
 
