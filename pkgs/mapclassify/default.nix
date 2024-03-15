@@ -38,6 +38,7 @@ buildPythonPackage rec {
     networkx numpy pandas scikit-learn scipy
   ];
 
+  # ignoring testing for now because libpysal doesn't exist publicly
   doCheck = false;
   #nativeCheckInputs = [
   #  geopandas
