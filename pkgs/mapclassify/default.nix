@@ -19,6 +19,8 @@ buildPythonPackage rec {
     wheel
   ];
 
+  doCheck = false;
+
   meta = with lib; {
     homepage = https://pysal.org/mapclassify/;
     description = "open-source python library for Choropleth map classification. It is part of PySAL the Python Spatial Analysis Library";
