@@ -22,7 +22,7 @@
           packages = with pkgs;[
             python311
             virtualenv
-            # callPackage ./pkgs/mapclassify/default.nix
+            callPythonPackage ./pkgs/mapclassify/default.nix
             ]
             ++ (with pkgs.python311Packages; [ 
               pip
