@@ -15,7 +15,7 @@ buildPythonPackage rec {
   };
 
   nativeBuildInputs = [
-    python3Packages.setuptools
-    python3Packages.wheel
+    setuptools
+    wheel
   ];
 }
