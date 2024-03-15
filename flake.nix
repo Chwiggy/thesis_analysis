@@ -37,7 +37,7 @@
               branca
             ])
             ++ (with pkgs;[
-              callPackage ./pkgs/mapclassify
+              callPackage ./pkgs/mapclassify/default.nix
             ]);
         };
       });
