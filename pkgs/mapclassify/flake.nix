@@ -12,7 +12,7 @@
 
   outputs = { self, nixpkgs }: {
 
-    mapclassify = pkgs.callPackage ./default.nix;
+    mapclassify = pkgs.callPackage ./default.nix {};
 
   };
 }
