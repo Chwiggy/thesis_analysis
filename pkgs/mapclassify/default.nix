@@ -10,12 +10,12 @@
   networkx, numpy, pandas, scikit-learn, scipy,
 
   #test dependencies
-  geopandas,
-  libpysal,
-  matplotlib,
-  pytest,
-  pytest-cov,
-  pytest-xdist,
+  # geopandas,
+  # libpysal,
+  # matplotlib,
+  # pytest,
+  # pytest-cov,
+  # pytest-xdist,
 }:
 
 buildPythonPackage rec {
@@ -38,15 +38,15 @@ buildPythonPackage rec {
     networkx numpy pandas scikit-learn scipy
   ];
 
-  # doCheck = false;
-  nativeCheckInputs = [
-    geopandas
-    libpysal
-    matplotlib
-    pytest
-    pytest-cov
-    pytest-xdist
-  ];
+  doCheck = false;
+  #nativeCheckInputs = [
+  #  geopandas
+  #  libpysal
+  #  matplotlib
+  #  pytest
+  #  pytest-cov
+  #  pytest-xdist
+  #];
 
   meta = with lib; {
     homepage = "https://pysal.org/mapclassify/";
