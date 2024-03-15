@@ -22,7 +22,6 @@
           packages = with pkgs;[
             python311
             virtualenv
-            python311.pkgs.callPackage ./pkgs/mapclassify/default.nix
             ]
             ++ (with pkgs.python311Packages; [ 
               pip
@@ -36,6 +35,7 @@
               umap-learn
               rasterio
               branca
+              callPackage ./pkgs/mapclassify/default.nix
             ]);
         };
       });
