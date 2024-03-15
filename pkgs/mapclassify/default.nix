@@ -15,9 +15,9 @@ buildPythonPackage rec {
   };
 
   nativeBuildInputs = [
-    setuptools
-    setuptools-scm
-    wheel
+    python311Packages.setuptools
+    python311Packages.setuptools-scm
+    python311Packages.wheel
   ];
 
   doCheck = false;
