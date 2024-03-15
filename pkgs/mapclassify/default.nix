@@ -1,7 +1,21 @@
 {
   lib,
   buildPythonPackage,
-  fetchPypi
+  fetchPypi,
+
+  #build dependencies
+  setuptools, wheel, setuptools-scm,
+
+  #dependencies
+  networkx, numpy, pandas, scikit-learn, scipy,
+
+  #test dependencies
+  geopandas,
+  libpysal,
+  matplotlib,
+  pytest,
+  pytest-cov,
+  pytest-xdist,
 }:
 
 buildPythonPackage rec {
@@ -15,12 +29,24 @@ buildPythonPackage rec {
   };
 
   nativeBuildInputs = [
-    python311Packages.setuptools
-    python311Packages.setuptools-scm
-    python311Packages.wheel
+    setuptools-scm
+    setuptools
+    wheel
   ];
 
-  doCheck = false;
+  propagatedBuildInputs = [
+    networkx numpy pandas scikit-learn scipy
+  ];
+
+  # doCheck = false;
+  nativeCheckInputs = [
+    geopandas
+    libpysal
+    matplotlib
+    pytest
+    pytest-cov
+    pytest-xdist
+  ];
 
   meta = with lib; {
     homepage = "https://pysal.org/mapclassify/";
