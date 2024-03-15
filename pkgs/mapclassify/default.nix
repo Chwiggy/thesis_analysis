@@ -16,13 +16,15 @@ buildPythonPackage rec {
 
   nativeBuildInputs = [
     setuptools
+    setuptools-scm
     wheel
   ];
 
   doCheck = false;
 
   meta = with lib; {
-    homepage = https://pysal.org/mapclassify/;
+    homepage = "https://pysal.org/mapclassify/";
+    repository = "https://github.com/pysal/mapclassify";
     description = "open-source python library for Choropleth map classification. It is part of PySAL the Python Spatial Analysis Library";
     license = licenses.bsd3;
   };
