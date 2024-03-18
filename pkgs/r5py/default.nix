@@ -22,6 +22,8 @@
   shapely,
 
   # how do java backend?
+  # hardcoding paths in the library seems a bit of a hassle
+  # for now it needs a jdk in the environment
   
 }:
 
