@@ -7,18 +7,18 @@
   setuptools, wheel
 
   #dependencies
-  ConfigArgParse
-  filelock
-  fiona
-  geopandas
-  importlib_resources
-  joblib
-  jpype1
-  numpy
-  pandas
-  psutil
-  pyproj
-  requests
+  ConfigArgParse,
+  filelock,
+  fiona,
+  geopandas,
+  importlib_resources,
+  joblib,
+  jpype1,
+  numpy,
+  pandas,
+  psutil,
+  pyproj,
+  requests,
   shapely
 }:
 
