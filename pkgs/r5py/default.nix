@@ -11,7 +11,7 @@
   filelock,
   fiona,
   geopandas,
-  importlib_resources,
+  importlib-resources,
   joblib,
   jpype1,
   numpy,
