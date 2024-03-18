@@ -35,6 +35,7 @@
               umap-learn
               rasterio
               branca
+              osmnx
               (python311.pkgs.callPackage ./pkgs/mapclassify/default.nix {})
               # (python311.pkgs.callPackage ./pkgs/r5py/default.nix {})
             ]);
