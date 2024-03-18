@@ -4,7 +4,7 @@
   fetchPypi,
 
   #build dependencies
-  setuptools, wheel
+  setuptools, wheel,
 
   #dependencies
   ConfigArgParse,
