@@ -22,7 +22,7 @@
   shapely,
 
   # java backend
-  java
+  jdk17
 }:
 
 buildPythonPackage rec {
@@ -54,8 +54,7 @@ buildPythonPackage rec {
     pyproj
     requests
     shapely
-
-    java
+    jdk17
   ];
 
   #ignoring testing for now because i don't want to package r5py sampledata
