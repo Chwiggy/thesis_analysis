@@ -22,6 +22,7 @@
           packages = with pkgs;[
             python311
             virtualenv
+            jdk17
             ]
             ++ (with pkgs.python311Packages; [ 
               pip
