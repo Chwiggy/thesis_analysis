@@ -19,7 +19,7 @@
   psutil,
   pyproj,
   requests,
-  shapely
+  shapely,
 
   # java backend
   java
