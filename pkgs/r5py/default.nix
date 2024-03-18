@@ -29,7 +29,7 @@ buildPythonPackage rec {
 
   src = fetchPypi {
     inherit pname version;
-    hash = "sha256-REF5jVWgUedSBr9G3M/IqPgyOqyFltGZYdEWYMmGd8o=";
+    hash = lib.fakeSha256;
   };
 
   nativeBuildInputs = [
@@ -60,9 +60,9 @@ buildPythonPackage rec {
   # ];
 
   meta = with lib; {
-    homepage = ;
-    repository = ;
-    description = ;
-    license = [];
+    homepage = "https://r5py.readthedocs.io/en/stable/";
+    repository = "https://github.com/r5py/r5py/tree/main";
+    description = "R⁵py is a Python library for rapid realistic routing on multimodal transport networks (walk, bike, public transport, and car)";
+    license = licenses.gpl3Plus;
   };
 }
