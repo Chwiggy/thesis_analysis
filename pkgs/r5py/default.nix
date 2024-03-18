@@ -20,6 +20,9 @@
   pyproj,
   requests,
   shapely
+
+  # java backend
+  java
 }:
 
 buildPythonPackage rec {
@@ -51,6 +54,8 @@ buildPythonPackage rec {
     pyproj
     requests
     shapely
+
+    java
   ];
 
   #ignoring testing for now because i don't want to package r5py sampledata
